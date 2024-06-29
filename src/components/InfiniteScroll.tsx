@@ -39,11 +39,20 @@ const InfiniteScroll: React.FC = () => {
 
     return (
         <div>
+        <div>
             {quotes.map((quote, index) => (
                 <Quote key={index} text={quote} />
             ))}
             <div ref={loader} style={{ height: '100px', margin: '10px 0' }}></div>
         </div>
+                <div>
+                {quotes.map((quote, index) => (
+                    <Quote key={index} text={quote} />
+                ))}
+                <div ref={loader} style={{ height: '100px', margin: '10px 0' }}></div>
+            </div></div>
+
+
     );
 };
 

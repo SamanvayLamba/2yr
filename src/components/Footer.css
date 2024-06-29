@@ -1,0 +1,32 @@
+.footer {
+    background: linear-gradient(135deg, #ff8c8c, #ffb6b6); /* Gradient background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Vertical space for the text */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'Arial', sans-serif; /* Clean font */
+}
+
+.footer-text {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Slightly larger text */
+    font-weight: bold; /* Bold text */
+    animation: fadeIn 1s ease-out;
+}
+
+.footer-text span {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+.footer-text span:hover {
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

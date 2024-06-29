@@ -1,0 +1,35 @@
+.header {
+    background: linear-gradient(135deg, #ff8c8c, #ffb6b6); /* Gradient background */
+    color: #fff; /* White text color */
+    padding: 40px 20px; /* Space around the text */
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.header-content {
+    max-width: 800px; /* Max width for the text container */
+    margin: 0 auto; /* Center the container */
+}
+
+.header h1 {
+    font-size: 2.5em; /* Larger text for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    font-family: 'Georgia', serif; /* Elegant font for the heading */
+    animation: textAnimation 1s ease-out;
+}
+
+.header p {
+    font-size: 1.2em; /* Slightly larger text for the paragraph */
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Clean font for the paragraph */
+    animation: textAnimation 1.5s ease-out;
+}
+
+@keyframes textAnimation {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.header h1 span {
+    font-size: 1.5em; /* Larger heart icons */
+}
