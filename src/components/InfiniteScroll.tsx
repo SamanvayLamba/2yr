@@ -7,10 +7,18 @@ const InfiniteScroll: React.FC = () => {
 
     const loadMoreQuotes = useCallback(() => {
         const newQuotes = [
-            "Roses are red, violets are blue...",
-            "The sun sets, but my love for you...",
-            "In your eyes, I see my future...",
-            "You are my moon, my stars...",
+            "Tu hai meri pot",
+            "Jo hai bohot hi hot",
+            "kabhi mujhse door na jaana",
+            "agar jaaye to jaldi aana laut",
+            "Tu hai meri sapno ki rani",
+            "Jo hai kabhi bholi aur kabhi shyani",
+            "Tere se door main to aisa",
+            "jaise hoti hai machhli bina pani",
+            "Tu hai meri sapno ki rani",
+            "Jo hai kabhi bholi aur kabhi shyani",
+            "Tere se door main to aisa",
+            "jaise hoti hai machhli bina pani",
             // Add more quotes here
         ];
         setQuotes((prevQuotes) => [...prevQuotes, ...newQuotes]);
