@@ -29,7 +29,7 @@ const Header: React.FC = () => {
                         Wordle
                     </Link>
                     <Link to="/infinite-scroll" className={`nav-button ${location.pathname === '/infinite-scroll' ? 'active' : ''}`}>
-                        Infinite Scroll
+                        Poem
                     </Link>
                 </nav>
             </div>
