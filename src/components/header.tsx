@@ -1,9 +1,10 @@
-
 import React, { useEffect, useState } from 'react';
-import './Header.css'; // Make sure to import your CSS file
+import { Link, useLocation } from 'react-router-dom';
+import './Header.css';
 
 const Header: React.FC = () => {
     const [showHearts, setShowHearts] = useState(true);
+    const location = useLocation();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -23,6 +24,14 @@ const Header: React.FC = () => {
                         Play the love percentage game here
                     </a>
                 </p>
+                <nav className="nav-buttons">
+                    <Link to="/wordle" className={`nav-button ${location.pathname === '/wordle' ? 'active' : ''}`}>
+                        Wordle
+                    </Link>
+                    <Link to="/infinite-scroll" className={`nav-button ${location.pathname === '/infinite-scroll' ? 'active' : ''}`}>
+                        Infinite Scroll
+                    </Link>
+                </nav>
             </div>
             {showHearts && (
                 <div className="hearts">
@@ -35,4 +44,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-
